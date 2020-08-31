@@ -1,2 +1,2 @@
-# Recipe_Gloubi_Boulga.github.io
+# Recipe_Gloubi_Boulga
 Recipe with html/css 
