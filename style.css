@@ -1,13 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bangers&display=swap');
 
 body{
-    background: linear-gradient(to left, #d8c068, #f1f1f1, #d8c068);
+    background: linear-gradient(135deg, #d8c068 10%, #d8c068 100%);
     letter-spacing: 2px;
+}
+body::before, body::after{
+    content: '';
+    position: absolute;
+    left: 0;top: 0;
+    height: 100%;width: 100%;
+    opacity: .4;
+}
+body::before{
+    clip-path: circle(30% at left 20%);
+    background: linear-gradient(35deg, #eff306 100%, #f1f1f1 10%);
+}
+body::after{
+    clip-path: circle(25% at right 60%);
+    background: linear-gradient(35deg, #fd9a06 100%, #d8c068 10%);
 }
 h1, h2, h3{
     font-family: 'Bangers', cursive;
-
+    color: #fd9a06;
+}
+h1{
+    text-align: center;
+    text-shadow: 0 0 30px rgba(255,255,255,.65);
+    background: rgba(255,255,255,.05);
+    backdrop-filter: blur(15px);
+    margin: 1rem auto;
+    border-radius: 25px;
+    box-shadow: 0 20px 25px rgba(0,0,0,.15);
+    border-top: 2px solid rgba(255,255,255,.5);
+    border-left: 2px solid rgba(255,255,255,.5);
+}
+h4{
+    font-family: 'Bangers', cursive;
+    color: #000000;    
+}
+.recipe, .action{
+    background: rgba(255,255,255,.1);
+    backdrop-filter: blur(2px);
+    margin: 1rem auto 1rem auto;
+    padding: 1rem;
+    border-radius: 25px;
+    box-shadow: 0 20px 25px rgba(0,0,0,.15);
+    border-top: 2px solid rgba(255,255,255,.5);
+    border-left: 2px solid rgba(255,255,255,.5);
+}
+.note{
+    display: flex;
+    flex-direction: row;
 }
 li, p{
     font-family: 'Abril Fatface', cursive;
+    list-style: none;
+}
+.fa {
+    margin-left: .5rem;
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+}
+.fa:hover {
+    color: #fd9a06;
+}
+@media screen and (max-width: 768px){
+    img{
+        max-width: 50%;
+    }
 }

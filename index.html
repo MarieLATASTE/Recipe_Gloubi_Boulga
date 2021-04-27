@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Projet_1_Recette</title>
 </head>
 <body>
     <h1>La recette du Gloubi Boulga</h1>
-    <h2>Ingrédients</h2>
-    <ul>
-        <li>Confiture de fraises,</li>
-        <li>Bananes mûres à point,</li>
-        <li>Chocolat râpé,</li>
-        <li>Moutarde de Dijon, très forte,</li>
-        <li>Saucisse de Toulouse crue, mais tiède (ce détail est très important!)</li>
-    </ul>
-    <p>À cette recette de base, vous pouvez ajouter quelques anchois ou un peu de crême Chantilly.</p>
-    <h2>Instructions</h2>
-    <ol>
-        <li>Dans un grand saladier écrasez les bananes,</li>
-        <li>Ajoutez le chocolat râpé,</li>
-        <li>Ensuite, incorporez la confiture de fraises, la moutarde de Dijon et la saucisse de Toulouse crue mais tiède.</li>
-    </ol>
-    <img src="casimir.png" alt="casimir">
-    <h3>À table! Et bon appétit pour déguster le Gloubi Boulga!</h3>
 
-    <!--h3:hover: BEURK!-->
-    
+    <div class="recipe">
+        <h2>Ingrédients</h2>
+        <ul>
+            <li>&#127827; Confiture de fraises,</li>
+            <li>&#127820; Bananes mûres à point,</li>
+            <li>&#127851; Chocolat râpé,</li>
+            <li>&#127855; Moutarde de Dijon, très forte,</li>
+            <li>&#127789; Saucisse de Toulouse crue, mais tiède (ce détail est très important!)</li>
+        </ul>
+        <p>À cette recette de base, vous pouvez ajouter quelques anchois ou un peu de crême Chantilly.</p>
+    </div>
+
+    <div class="action">
+        <h2>Instructions</h2>
+        <ol>
+            <li>&#127860; Dans un grand saladier écrasez les bananes,</li>
+            <li>&#127860; Ajoutez le chocolat râpé,</li>
+            <li>&#127860; Ensuite, incorporez la confiture de fraises, la moutarde de Dijon et la saucisse de Toulouse crue mais tiède.</li>
+        </ol>
+        <img src="casimir.png" alt="casimir">
+    </div>
+    <div class="note">
+        <h4>À table! Et bon appétit pour déguster le Gloubi Boulga!</h4>
+        <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+    </div>
+
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("fa-thumbs-down");
+        }
+    </script>
 </body>
 </html>
