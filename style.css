@@ -65,6 +65,7 @@ li, p{
 .fa:hover {
     color: #fd9a06;
 }
+
 @media screen and (max-width: 768px){
     img{
         max-width: 50%;
